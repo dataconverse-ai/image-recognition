@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  fastapi:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+      - $HOME/.cache/pypoetry:/root/.cache/pypoetry  # Caches Poetry's dependencies to speed up builds
+    restart: always
