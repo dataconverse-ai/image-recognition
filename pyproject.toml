@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "image-recognition"
+version = "0.1.0"
+description = ""
+authors = ["Mohamed Homaid <mhomaid@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.111.0"
+uvicorn = "^0.29.0"
+python-multipart = "^0.0.9"
+opencv-python-headless = "^4.9.0.80"
+pytest = "^8.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
